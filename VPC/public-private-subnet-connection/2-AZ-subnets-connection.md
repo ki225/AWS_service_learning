@@ -1,11 +1,13 @@
-# AWS Networking
-## Propose
+# 2 Available Zone subnets connection
+## Learning goal
 For knowing the concept of networking and how to use the common services, such as ec2, vpc, etc.
 ## Concept
 ### VPC (Virtual Private Cloud)
 AWS VPC is an isolated piece of the cloud. You control who gets to visit and who stays out, ensuring your resources are secure and organized with AWS VPC. 
 ### Subnet
-A subnet is a range of IP addresses in your VPC. In AWS, we can build public subnets and private subnets to control the access to the Internet. A public subnet means the subnet has a direct route to an internet gateway. Resources in a public subnet can access the public internet. On the other side, a private subnet represents the subnet does not have a direct route to an internet gateway. Resources in a private subnet require a NAT device to access the public internet.
+A subnet is a range of IP addresses in your VPC. In AWS, we can build public subnets and private subnets to control the access to the Internet. 
+
+A public subnet means the subnet has a direct route to an internet gateway. Resources in a public subnet can access the public internet. On the other side, a private subnet represents the subnet does not have a direct route to an internet gateway. It is usually used to put important resources so it cannot expose to the Internet. Resources in a private subnet require a NAT device to access the public internet.
 
 ### Gateway
 - Internet Gateway: Allow communication between the resources in your VPC and the internet.
