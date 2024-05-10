@@ -1,0 +1,1 @@
+- [ AWS Certified Cloud Practitioner (CLF-C02)](https://explore.skillbuilder.aws/learn/course/18572/exam-prep-standard-course-aws-certified-cloud-practitioner-clf-c02-traditional-chinese)
