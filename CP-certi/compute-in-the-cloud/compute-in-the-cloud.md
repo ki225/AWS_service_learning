@@ -1,6 +1,12 @@
 # Compute In The CLoud
 ## Amazon Elastic Compute Cloud (Amazon EC2)
-- 在雲端以 Amazon EC2 伺服器執行個體的形式提供安全、可調整大小的運算容量。 
+- 在雲端以 Amazon EC2 伺服器執行個體的形式提供安全、可調整大小的運算容量。
+### IP
+- EC2 停止再重新啟動，公有IP會改變，暫停期間原有 IP可能也會讓給別人。
+- elastic IP
+  - 無使用時也要付費
+  - 保留 IP
+
 ## 執行個體類型
 - General purpose instances / 一般用途執行個體
 - Compute optimized instances / 運算最佳化執行個體
