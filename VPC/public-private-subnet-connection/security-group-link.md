@@ -1,6 +1,6 @@
 # Security Group to Security Group
 ## What is Security Group(SG)
-A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance.
+A security group controls the traffic that is allowed to reach and leave the resources that it is associated with. For example, after you associate a security group with an EC2 instance, it controls the inbound and outbound traffic for the instance. It is also called virtual firewall.
 
 ## Learning goal
 To learn how to build a simple connection between public web server and a private app with two security groups.
