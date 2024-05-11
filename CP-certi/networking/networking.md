@@ -11,6 +11,7 @@
 - 允許來自網際網路的公有流量存取 VPC
 ### NAT Gateway
 - 只能放在 public subnet
+- 將出站流量從 Private IP 地址轉換為 NAT Gateway 的公共IP地址。
 
 <img src="img/IMG_1419.PNG">
 
