@@ -7,16 +7,16 @@ AWS VPC is an isolated piece of the cloud. You control who gets to visit and who
 ### Subnet
 A subnet is a range of IP addresses in your VPC. In AWS, we can build public subnets and private subnets to control the access to the Internet. 
 
-A public subnet means the subnet has a direct route to an internet gateway. Resources in a public subnet can access the public internet. On the other side, a private subnet represents the subnet does not have a direct route to an internet gateway. It is usually used to put important resources so it cannot expose to the Internet. Resources in a private subnet require a NAT device to access the public internet.
+A **public subnet means the subnet has a direct route to an internet gateway.** Resources in a public subnet can access the public internet. On the other side, a private subnet represents the subnet does not have a direct route to an internet gateway. It is usually used to put important resources so it cannot expose to the Internet. Resources in a private subnet require a NAT device to access the public internet.
 
 ### Gateway
 - Internet Gateway: Allow communication between the resources in your VPC and the internet.
-- NAT Gateway: This is the secret passage for your private houses (resources) to access the internet without exposing themselves. A Network Address Translation (NAT) Gateway allows instances in private subnets to connect to the internet.
+- Network Address Translation / NAT Gateway: This is the secret passage for your private resources to access the internet without exposing themselves. A  NAT Gateway allows instances in private subnets to connect to the internet. **It's important that NAT gateway is set in the public subnet.**
 ### Route table
-Has a route between VPC and gateway. 
+Has a route between VPC and gateway. It have a route call "local" by default for all traffic connect in a whole VPC. The "local" route I use "router" to present in the diagram.
 
 ## Architecture diagram
-<img src="img/diagram.png">
+<img src="img/diagram-03.png">
 
 
 ## Steps

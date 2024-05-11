@@ -2,7 +2,7 @@
 ## Learning goal
 To understand the network connection between public subnet and private subnet in the same VPC.
 ## VPC Architecture Diagram
-<img src="img/diagram-02.png">
+<img src="img/diagram-05.png">
 
 ## Details
 Build a VPC and create 2 subnets into it. For each subnet, we create an EC2 instance for it to test the network connection. We also create a route table for each EC2 instance for connecting to the gateway, so that the instance can get resources from the Internet.
