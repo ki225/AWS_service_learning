@@ -16,7 +16,7 @@ A **public subnet means the subnet has a direct route to an internet gateway.** 
 Has a route between VPC and gateway. It have a route call "local" by default for all traffic connect in a whole VPC. The "local" route I use "router" to present in the diagram.
 
 ## Architecture diagram
-<img src="img/diagram-03.png">
+<img src="img/diagram-04.png">
 
 
 ## Steps
