@@ -17,7 +17,9 @@
 
 ## Edge Location 節點
 - Amazon CloudFront 用來將內容的快取副本存放在更靠近客戶位置的站點，以便加快交付。
-  - Amazon CloudFront 是一種內容交付服務。這項服務使用節點網路來快取內容，並將內容交付給世界各地的客戶。內容經過快取後，會以副本形式存放在本機。這些內容可能是影片檔案、相片、網頁等。
+  - 全球性
+  - 使用節點網路來快取內容，將內容交付給世界各地的客戶。
+  - 內容經過快取後，會以**副本**形式存放在**本機**。這些內容可能是影片檔案、相片、網頁等。
 - ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1715360400/gDsLZg-tazoJD5huJteLlg/tincan/50bb3ae9507c15309a6ecbb7b8d96d9cb455d06f/assets/CgPtp0K4ZJrvbhOl_hGFL1EyBbeUcy4Of.png)
 
 ### cloud front
