@@ -26,11 +26,13 @@ route table 服務預設會有 local，也就是圖片裡的 router；若把 loc
 
 ### Virtual private gateway
 - 存取 VPC 中的私有資源
-- 在 VPC 和私人網路 (例如內部部署資料中心或企業內部網路) 之間建立虛擬私人網路 (VPN) 連線。流量必須來自核准的網路，虛擬私有閘道才會允許流量進入 VPC。
+- 在 **VPC 和私人網路** (例如內部部署資料中心或企業內部網路) 之間建立虛擬私人網路 (VPN) 連線。
+- 流量必須來自核准的網路，虛擬私有閘道才會允許流量進入 VPC。
 - 雖然此連線為私有且經過加密，但是會流經公有網際網路，而不是經由專用連線。
 
 ### AWS Direct Connect
-- 在資料中心和 VPC 之間建立專用私有連線
+- 在**資料中心和 VPC 之間**建立專用私有連線
+- 有助於降低網路成本，並增加可流經網路傳輸的頻寬。
 
 ## Subnets and Network Access Control Lists
 將咖啡店的櫃檯區域視為 VPC。櫃檯區分成兩個不同的區域，一個是收銀員的工作站，一個是咖啡師的工作站。在 VPC 中，子網路是用來將資源各自分組的個別區域，透過控制網路流量，限制使用者的存取。
@@ -82,4 +84,8 @@ route table 服務預設會有 local，也就是圖片裡的 router；若把 loc
    - 客戶的請求會透過 Amazon CloudFront 傳送到最近的節點。
    - Amazon CloudFront 會連接到 Application Load Balancer，後者會將傳入的封包傳送到 Amazon EC2 執行個體。
 
-
+> [!NOTE]
+> - 原始伺服器: Amazon CloudFront 從中取得檔案的伺服器
+> - region: 獨立的地理位置，具有彼此隔離的多個位置
+> - 節點: Amazon CloudFront 用來快取內容複本的網站
+> - AZ: 區域內的一個資料中心或一組資料中心、AWS 全球基礎設施的完全隔離分割區

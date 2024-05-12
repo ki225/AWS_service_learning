@@ -51,8 +51,17 @@
 
 ## Elastic Load Balancing
 - 負載平衡器會作為傳入 Auto Scaling 群組之所有 Web 流量的單一聯絡窗口
+- 將傳入流量分散到多個目標 (例如 Amazon EC2 執行個體) 的服務
 - ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1715310000/sigGosoKSxSPrsboXWgt-Q/tincan/50bb3ae9507c15309a6ecbb7b8d96d9cb455d06f/assets/4Gi2s1Lf6PgngYlw_IwR_Im7rBdRH0kUD.png)
 
+> [!NOTE]
+> - AWS Auto Scaling: 監控應用程式並自動新增或移除資源群組容量，以回應需求變更的服務
+> - Amazon ElastiCache: 能用於在雲端中設定、管理和擴展分散式記憶體內或快取環境的服務
+
+> [!NOTE]
+> 如果要儲存資料並且連接 EC2 執行個體存放區：
+> - EC2 執行個體存放區: 短期存放、不擔心不見
+> - Amazon EBS 磁碟區： 長期存放、重要
 
 ## Messaging and Queuing
 - 單體式應用程式

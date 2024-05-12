@@ -18,7 +18,16 @@
 ## AWS Trusted Advisor
 - 檢查環境
 - 根據 AWS 最佳實務提供即時建議。
-  - 成本最佳化、效能、安全性、容錯能力和服務配額 / optimization, performance, security, fault tolerance, and service limits
+  - 成本最佳化 optimization
+    - 未使用或閒置資源的檢查，資源可以消除以節省成本
+  - 效能 performance
+    - 提供如何利用佈建輸送量的建議，協助改善服務的效能。
+    - e.g. 對高使用率 EC2 執行個體的檢查
+  - 安全性 security
+    - 檢閱許可和識別要啟用哪些 AWS 安全功能的檢查
+  - 容錯能力 fault tolerance
+    - 有助於改善應用程式可用性和備援的檢查。
+  - 服務配額 service limits
 - AWS Trusted Advisor dashboard(儀表板)
   - ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1715482800/tk6lyKxY5HH_oG1SyiGBOw/tincan/50bb3ae9507c15309a6ecbb7b8d96d9cb455d06f/assets/57DFI8UuqARakxhv_y7m_A5IYU52xvXJw.jpg)
   - 綠色勾號表示已偵測到沒問題的項目數量。
