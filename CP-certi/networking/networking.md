@@ -45,6 +45,9 @@ route table 服務預設會有 local，也就是圖片裡的 router；若把 loc
 - 範例
   - ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1715324400/Et2DbDCVcdvpsJlt6RHc9g/tincan/50bb3ae9507c15309a6ecbb7b8d96d9cb455d06f/assets/Wrn7wsccz0S_uj2H_L6hMmMHUJ0j09W1a.png)
 
+> [!NOTE]
+> 若要讓外網使用者可以存取 VPC private subnet裡面的 EC2 instance，要配置  Elastic IP (ELP)，確保它們具有固定的公共IP地址。
+
 ### Network traffic in a VPC
 - 封包是透過網際網路或網路傳送的資料單位，客戶向 AWS 雲端中託管的應用程式請求資料時，此請求會以封包形式傳送。
 - 封包進入子網路或離開子網路之前會先被檢查權限。這些權限代表著封包由誰傳送，以及在子網路中嘗試與資源通訊的方式。

@@ -1,6 +1,7 @@
 ## Resources
-- [AWS Certified Cloud Practitioner (CLF-C02)](https://explore.skillbuilder.aws/learn/course/18572/exam-prep-standard-course-aws-certified-cloud-practitioner-clf-c02-traditional-chinese)
+- [AWS Certified Cloud Practitioner (CLF-C)2)](https://explore.skillbuilder.aws/learn/course/18572/exam-prep-standard-course-aws-certified-cloud-practitioner-clf-c02-traditional-chinese)
 - 證照陪跑計劃 by AWS 校園大使 
+- mock exam: [AWS Certified Cloud Practitioner Official Practice Question Set (CLF-CO2-English)](https://explore.skillbuilder.aws/learn/course/14050/play/86728/official-practice-question-set-aws-certified-cloud-practitioner-clf-c02-english)
 
 ## AWS Certified Cloud Practitioner 考試簡介
 -  65 個問題，可在 90 分鐘內完成。
