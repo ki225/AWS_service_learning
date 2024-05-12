@@ -97,7 +97,7 @@
 - 選擇金鑰所需的特定存取控制層級
   - 決定 IAM 使用者/角色
 ### AWS WAF
-- Web 應用程式防火牆
+- **Web 應用程式**防火牆
 - 可與 Amazon CloudFront 和 Application Load Balancer 搭配使用
 - 封鎖或允許流量
 - 要求進入 AWS WAF 時，它會根據您在 [Web 存取控制清單(web ACLs)](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl.html)
@@ -105,6 +105,6 @@
 - 使用 ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1715396400/8iZv6MuKNE9VS6Z1SUAFnA/tincan/50bb3ae9507c15309a6ecbb7b8d96d9cb455d06f/assets/Ux-RZ83rkZQcO0yM_AWc-r3kOE2FKiHee.png)
 
 ### Amazon Inspector
-- 自動化安全評定，來協助改善應用程式的安全性與合規性、是否存在安全漏洞，以及與安全最佳實務之間的差異
+- 自動化安全評定，來協助改善**應用程式**的安全性與合規性、是否存在安全漏洞，以及與安全最佳實務之間的差異
 ### Amazon GuardDuty
-- 監控 AWS 環境中的網路活動和帳戶行為識別威脅，包括 VPC 流程日誌和 DNS 日誌。 
+- 監控 AWS 環境中的**網路**活動和帳戶行為識別威脅，包括 VPC 流程日誌和 DNS 日誌。 

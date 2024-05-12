@@ -39,12 +39,10 @@ AWSCloudFront是一個內容分發網絡（CDN） 服務。它的主要功能是
   - 透過專為程式設計語言或平台設計的 API，用程式碼執行 AWS 服務。
 
 ### 佈建
-- AWS Elastic Beanstalk
-  - 調整容量
-  - 負載平衡
-  - 自動擴展
-  - 應用程式運作狀態監控
-- AWS CloudFormation
+- **AWS Elastic Beanstalk**
+  - **快速部署和擴展應用程式**
+  - 企業只需上傳應用程式，Elastic Beanstalk 就能自動處理容量佈建、負載平衡、自動調整規模和應用程式運作狀態監控的部署細節。
+- **AWS CloudFormation**
   - 可以透過撰寫程式碼行來建立環境，無需使用 AWS 管理主控台個別佈建資源。
     - 情形：比方說要將某個很大的建置複制到另一個 region，如果一個一個設置會花很多時間，這時候用 AWS CloudFormation 就可以使用文檔(JSON/YAML)一口氣佈建
   - 會在管理堆疊時判斷需要執行的正確作業，並在偵測到錯誤時自動復原變更。
@@ -55,6 +53,6 @@ AWSCloudFront是一個內容分發網絡（CDN） 服務。它的主要功能是
 
 
 ## other 
-- AWS Outposts 這項服務可讓您以混合雲端方法執行基礎設施。
+- AWS Outposts 這項服務可讓您以**混合雲端**方法執行基礎設施。
 - AWS Fargate 是一種容器專用的無伺服器運算引擎。
 - Amazon Simple Queue Service (Amazon SQS) 這項服務可讓您透過佇列在軟體元件之間傳送、存放和接收訊息。

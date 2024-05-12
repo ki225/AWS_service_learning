@@ -6,8 +6,9 @@
 - 執行個體終止時，資料會遺失，即使重新啟動也不復原。
 
 ### Amazon Elastic Block Store (Amazon EBS)
+- 用於在資料庫上新增快取層，以**改善常見請求讀取時間**。
 - 用於提供區塊式存放磁碟區
-  - 可搭配 Amazon EC2 執行個體使用。如果停止/終止執行個體，連接的 EBS 磁碟區上的所有資料仍然可用。
+  - 可搭配 Amazon EC2 執行個體使用。如果**停止/終止執行個體，連接的 EBS 磁碟區上的所有資料仍然可用**。
   - 將磁碟機從 EC2 執行個體的主機電腦分開
 - 定義組態 (例如磁碟區大小和類型) 並加以佈建。
 - 建立 Amazon EBS snapshots，以建立 EBS 磁碟區(volume)的增量備份。
@@ -22,7 +23,8 @@
 
 - Amazon S3 能提供無限的儲存空間。
 - 單一物件的檔案大小上限為 5 TB。
-
+> [!WARNING]
+> Amazon S3 儲存貯體不能連接到 Amazon EC2 執行個體
 ### 種類
 - S3 Standard 
   - 專為經常存取的資料設計
@@ -39,8 +41,8 @@
 - S3 Intelligent-Tiering 
   - 非常適合存取模式未知或持續變更的資料，Amazon S3 會監控物件的存取模式
   - 每個物件都需要小額每月監控和自動化費用
-  - 如果連續 30 天未存取物件，Amazon S3 會自動將物件移至不常存取層，即 S3 Standard-IA。
-  - 如果存取了不常存取層中的物件，Amazon S3 會自動將其移至頻繁存取層，即 S3 Standard。
+  - 如果連續 30 天未存取物件，Amazon S3 會自動將物件移至不常存取層，即 **S3 Standard-IA**。
+  - 如果存取了不常存取層中的物件，Amazon S3 會自動將其移至頻繁存取層，即 **S3 Standard**。
 - S3 Glacier Instant Retrieval 
   - 適用於需要立即存取的封存資料
   - 可以在幾毫秒內擷取物件
