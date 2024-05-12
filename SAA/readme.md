@@ -6,6 +6,22 @@
 SAA-C01 and SAA-CO2 are retired.
 ### C03
 - Design Secure Architectures
+  - IAM
+  - identitycenter(single sign-on)
+  - security token service
+  - control tower
+  - service control policy
+  - cognito
+  - guardDuty
+  - macie
+  - shield
+  - WAF
+  - secret manager
+  - STS
+  - VPC
+  - KMS(key management service)
+  - certificate manager
+  - data recovery and retain
 - Design Resilient Architectures
 - Design High-Performing Architectures
 - Design Cost-Optimized Architectures
