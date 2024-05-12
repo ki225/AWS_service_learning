@@ -99,3 +99,117 @@ traffic.
 
 
 
+#### Any person or application that interacts with AWS requires security credentials. AWS uses these credentials to identify who is making the call and whether to allow the requested access. You have just set up a VPC network for a client and you are now thinking about the best way to secure this network. You set up a security group called vpcsecuritygroup. Which following statement is true in respect to the initial settings that will be applied to this security group if you choose to use the default settings for this group?
+- [ ] Allow all inbound traffic and allow no outbound traffic.
+- [x] Allow no inbound traffic and allow all outbound traffic.
+- [ ] Allow inbound traffic on port 80 only and allow all outbound traffic.
+- [ ] Allow all inbound traffic and allow all outbound traffic.
+
+>[!NOTE]
+>[官網](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/default-custom-security-groups.html)
+>
+>The following are the default rules for a security group that you create:
+>- Allows no inbound traffic
+>- Allows all outbound traffic
+
+
+#### You are creating a bastion host to allow SSH access to a set of EC2 instances in a private subnet within your organization's VPC. Which of the following should be done as part of configuring the bastion host? (Choose two.)
+- [x] A. Ensure that the bastion host is exposed directly to the Internet.
+- [ ] B. Place the bastion host within the private subnet.
+- [x] C. Add a route from the bastion host IP into the private subnet into the subnet's NACLs.
+- [ ] D. Ensure that the bastion host is within the same security group as the hosts within the private subnet.
+
+#### Your company is setting up a VPN connection to connect its local network to an AWS VPC. Which of the following components are not necessary for this setup? (Choose two.)
+- [x] A. A NAT instance
+- [ ] B. A virtual private gateway
+- [x] C. A private subnet in the AWS VPC
+- [ ] D. A customer gateway
+>[!NOTE]
+>Site-to-site VPN connections require a virtual private gateway (on the AWS side) and a customer gateway (on the local side). A private subnet is optional, as is a NAT instance.
+
+
+#### How would you enable encryption of your EBS volumes?
+- [ ] A. Use the AWS CLI with the aws security command.
+- [ ] B. Take a snapshot of the EBS volume and copy it to an encrypted S3 bucket.
+- [x] C. Select the encryption option when creating the EBS volume.
+- [ ] D. Encrypt the volume using the encryption tools of the operating system of the EC2 instance that has mounted the EBS volume
+> [!NOTE]
+> Amazon Elastic Block Store（EBS）是AWS提供的一種持久性塊存儲服務，用於將數據存儲在EC2實例上。
+
+#### Which of the following must a security group have when you create it? (Choose two.)
+- [ ] A. At least one inbound rule
+- [x] B. A name
+- [x] C. A description
+- [ ] D. At least one outbound rule
+
+#### Which of the following are default rules on a default security group, such as the one that comes with the default VPC? (Choose two.)
+- [x] A. Outbound: 0.0.0.0/0 for all protocols allowed
+- [ ] B. Inbound: 0.0.0.0/0 for all protocols allowed
+- [x] C. Outbound: ::/0 for all protocols allowed
+- [ ] D. Inbound: ::/0 for all protocols allowed
+
+> [!NOTE]
+> 0.0.0.0/0 is IPv4, ::/0 is IPv6
+
+####  Which of the following are parts of a security group rule? (Choose two.)
+- [x] A. A protocol
+- [ ] B. A subnet
+- [ ] C. An instance ID
+- [x] D. A description
+
+####  Which of the following describes client-side encryption for S3 bucket data?
+- [x] A. You encrypt and upload data to S3, managing the encryption process yourself.
+- [ ] B. You encrypt and upload data to S3, allowing AWS to manage the encryption process.
+- [ ] C. You request AWS to encrypt an object before saving it to S3.
+- [ ] D. You encrypt an object, but AWS uploads and decrypts the object.
+
+> [!NOTE]
+> client-side 就是讓客戶自己維護服務的安全性
+
+
+#### Which of the following are valid steps in enabling client-side encryption for S3? (Choose two.)
+- [ ] A. Download the AWS CLI and SSH to your S3 key store.
+- [x] B. Use a KMS-managed customer master key.
+- [x] C. Download an AWS SDK for encrypting data on the client side.
+- [ ] D. Turn on bucket encryption for the target S3 buckets.
+
+
+#### What type of replication will your Multi-AZ RDS instances use?
+- [ ] A. Offline replication
+- [x] B. Synchronous replication
+- [ ] C. Push replication
+- [ ] D. Asynchronous replication
+
+> [!NOTE]
+> In an Amazon RDS Multi-AZ deployment, Amazon RDS automatically creates a primary database (DB) instance and synchronously replicates the data to an instance in a different AZ.
+> 
+> [官網](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://aws.amazon.com/rds/features/multi-az/&ved=2ahUKEwjWq7fHkIWGAxXkmlYBHZcqC9wQFnoECA4QAw&usg=AOvVaw0hKuaPUyMuq2YWK54-CYDG)
+
+#### You want to provide maximum protection against data in your S3 object storage being deleted accidentally. What steps should you take? (Choose two.)
+- [x] A. Enable versioning on your S3 buckets.
+- [x] B. Turn on MFA Delete on your S3 buckets.
+- [ ] C. Enable versioning in CloudWatch's S3 API.
+- [ ] D. Remove IAM permissions for deleting objects for all users.
+
+> [!NOTE]
+> Versioning in Amazon S3 is a means of keeping multiple variants of an object in the same bucket.
+> 
+> [官網](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html)
+
+
+#### What types of data are encrypted when you create an encrypted EBS volume? (Choose two.)
+- [x] A. Data at rest inside the volume
+- [x] B. Data moving between the volume and the attached instance
+- [ ] C. Data inside S3 buckets that store the encrypted instance
+- [ ] D. Data in an EFS on instances attached to the volume
+
+> [!NOTE]
+> When you create an encrypted EBS volume and attach it to a supported instance type, the following types of data are encrypted: Data at rest inside the volume. All data moving between the volume and the instance. All snapshots created from the volume.
+>
+> [Amazon EBS encryption](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html&ved=2ahUKEwjuzrvOlIWGAxUYdvUHHdVMBcQQFnoECBUQAw&usg=AOvVaw1-gk50DqOaWxOXx3pGtA6E)
+
+#### How can you access the private IP address of a running EC2 instance?
+- [ ] A. http://169.254.169.254/latest/user-data/
+- [ ] B. http://169.254.169.254/latest/instance-data/
+- [x] C. http://169.254.169.254/latest/meta-data/
+- [ ] D. http://169.254.169.254/latest/ec2-data/

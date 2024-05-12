@@ -10,9 +10,9 @@
   - 可搭配 Amazon EC2 執行個體使用。如果停止/終止執行個體，連接的 EBS 磁碟區上的所有資料仍然可用。
   - 將磁碟機從 EC2 執行個體的主機電腦分開
 - 定義組態 (例如磁碟區大小和類型) 並加以佈建。
-- 建立 Amazon EBS 快照(Amazon EBS snapshots)，以建立 EBS 磁碟區的增量備份。
-  - 增量備份
-  - 增量備份與完整備份不同，每次進行完整備份時，會複製存放磁碟區中的所有資料。完整備份包含自最近一次備份之後未變更的所有資料。
+- 建立 Amazon EBS snapshots，以建立 EBS 磁碟區(volume)的增量備份。
+  - snapshot其實就是增量備份
+    - 增量備份與完整備份不同，每次進行完整備份時，會複製存放磁碟區中的所有資料。完整備份包含自最近一次備份之後未變更的所有資料。
 - ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1715338800/z3RSfo9PkdHbB6sMGh8ooA/tincan/50bb3ae9507c15309a6ecbb7b8d96d9cb455d06f/assets/nXZ5gc23EZqGP14Y_M_2Hzp9gRvoP1UzK.png)
 
 
